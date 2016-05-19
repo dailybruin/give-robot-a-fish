@@ -29,7 +29,10 @@
 .content {
   margin: auto;
   margin-top: 2em;
-  max-width: 75%; }
+  max-width: 60%; }
+
+figure img {
+  width: 100%; }
 
 blockquote {
   padding-left: 15px;
@@ -68,9 +71,6 @@ blockquote.right {
   float: right;
   margin: 5%;
   margin-right: -100px; }
-
-img {
-  max-width: 100%; }
 
 figcaption .caption {
   font-size: 0.9rem; }
