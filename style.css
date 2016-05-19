@@ -95,14 +95,24 @@ footer {
     float: none;
     max-width: 100%;
     margin: 1em auto 1em auto; } }
-g {
+.arm-left, .body, .head {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
-  stroke: #19f6e8;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s; }
 
-g:hover {
-  stroke-width: 2px;
+g:hover .arm-left {
+  stroke: #19f6e8;
+  stroke-width: 5px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760; }
+g:hover .body {
+  stroke: yellow;
+  stroke-width: 5px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760; }
+g:hover .head {
+  stroke: blue;
+  stroke-width: 5px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
 
