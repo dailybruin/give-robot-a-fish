@@ -1,4 +1,7 @@
 $special_font: 'PT Sans', sans-serif;
+$main_dark_color: #A50104;
+$main_medium_color: #A50104;
+$main_light_color: #595959;
 
 .landing {
 	text-align: center;
@@ -50,7 +53,7 @@ blockquote{
 	max-width: 500px;
 	margin: 2rem 4rem;
 	margin-left: -100px;
-	border-left: 4px solid red;
+	border-left: 4px solid $main_light_color;
 	font-size: 1.75rem;
 	font-family: $special_font;
 
@@ -62,12 +65,13 @@ blockquote{
 
 blockquote.right {
 	border-left: none;
-	border-right: 4px solid red;
+	border-right: 4px solid $main_light_color;
 }
 
 .subhead {
 	font-weight: 600;
 	font-family: $special_font;
+	color: $main_medium_color;
 }
 
 .first-letter {
@@ -79,6 +83,7 @@ blockquote.right {
   padding-left: 2px;
   padding-right: 10px;
   font-family: $special_font;
+  color: $main_medium_color;
 }
 
 blockquote.right{
@@ -102,7 +107,7 @@ footer {
 	text-align: center;
     font-family: $special_font;
     color: grey;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 // MOBILE SCREENS

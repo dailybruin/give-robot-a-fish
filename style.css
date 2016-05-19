@@ -37,7 +37,7 @@ blockquote {
   max-width: 500px;
   margin: 2rem 4rem;
   margin-left: -100px;
-  border-left: 4px solid red;
+  border-left: 4px solid #595959;
   font-size: 1.75rem;
   font-family: "PT Sans", sans-serif; }
   blockquote aside {
@@ -46,11 +46,12 @@ blockquote {
 
 blockquote.right {
   border-left: none;
-  border-right: 4px solid red; }
+  border-right: 4px solid #595959; }
 
 .subhead {
   font-weight: 600;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  color: #A50104; }
 
 .first-letter {
   float: left;
@@ -60,7 +61,8 @@ blockquote.right {
   padding-top: 5px;
   padding-left: 2px;
   padding-right: 10px;
-  font-family: "PT Sans", sans-serif; }
+  font-family: "PT Sans", sans-serif;
+  color: #A50104; }
 
 blockquote.right {
   float: right;
@@ -78,7 +80,7 @@ footer {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   color: grey;
-  margin-top: 1rem; }
+  margin: 1rem; }
 
 @media only screen and (max-width: 65em) {
   .content {
