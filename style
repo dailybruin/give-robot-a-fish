@@ -114,13 +114,4 @@ footer {
   stroke-dashoffset: -474;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s; }
 
-#tooltip-span {
-  display: block;
-  position: fixed;
-  overflow: hidden;
-  background: grey;
-  border-radius: 10%;
-  padding: 20px;
-  color: white; }
-
 /*# sourceMappingURL=style.css.map */

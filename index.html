@@ -2360,6 +2360,7 @@
 			<g id="Layer_2">
 			</g>
 			</svg> 	<!-- END SVG -->
+			<span id="tooltip-span"></span>
 		</div>
 		
 
@@ -2369,42 +2370,75 @@
 		Page created by Anisa Bashiri, Lisa He, Alfred Lucero, Omar Ozgur, Shannon Phu, and Michael Zhang.
 	</footer>
 	<script type="text/javascript">
+		var x, y, tooltipSpan;
 		$(document).foundation();
+		$(document).on('mouseover', 'div', function(e) {
+    		if($(e.target).attr('class') && $(e.target).attr('class').indexOf("arms") > 0){
+    			showTooltip("These are the arms");
+    		}
+    		else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("body") > 0){
+    			showTooltip("This is the body");
+    		}
+    		else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("legs") > 0){
+    			showTooltip("These are the legs");
+    		}
+    		else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("kinect") > 0){
+    			showTooltip("This is the kinect");
+    		}
+    		else{
+    			removeTooltip();
+    		}
+		});
 		$(document).ready(function() {
+			tooltipSpan = document.getElementById('tooltip-span');
+			window.onmousemove = function (e) {
+			    x = e.clientX;
+			    y = e.clientY;
+			    tooltipSpan.style.top = (y - 80) + 'px';
+			    tooltipSpan.style.left = (x - 80) + 'px';
+			};
 			$("button").click(function() {
 			    $('html, body').animate({
 			        scrollTop: $(".content").offset().top
 			    }, 500);
 			});
-			$("svg").hover(function() {
-				console.log("a");
-				$(".arms").css({ stroke: "red", strokeWidth: "2px" });
-			});
-
 			$(".arms").hover(function() {
-				$(".arms").css({ fill: "yellow" });
+				setHighlight($(".arms"), "19f6e8");
 			}, function() {
-				$(".arms").css({ fill: "" });
+				resetHighlight($(".arms"));
 			});
 
 			$(".body").hover(function() {
-				$(".body").css({ fill: "yellow" });
+				setHighlight($(".body"), "yellow");
 			}, function() {
-				$(".body").css({ fill: "" });
+				resetHighlight($(".body"));
 			});
 
 			$(".legs").hover(function() {
-				$(".legs").css({ fill: "yellow" });
+				setHighlight($(".legs"), "blue");
 			}, function() {
-				$(".legs").css({ fill: "" });
+				resetHighlight($(".legs"));
 			});
 
 			$(".kinect").hover(function() {
-				$(".kinect").css({ fill: "yellow" });
+				setHighlight($(".kinect"), "pink");
 			}, function() {
-				$(".kinect").css({ fill: "" });
+				resetHighlight($(".kinect"));
 			});
 		});
+		function showTooltip(text){
+			tooltipSpan.innerHTML = text;
+			tooltipSpan.style.visibility = "visible";
+		}
+		function removeTooltip(){
+			tooltipSpan.style.visibility = "hidden";
+		}
+		function setHighlight(self, color){
+			self.css({ "stroke": color, "stroke-width": "3px", "stroke-dashoffset": "0", "stroke-dasharray": "760" });
+		}
+		function resetHighlight(self){
+			self.css({ "stroke-width": "0px", "stroke-dashoffset": "-474", "stroke-dasharray": "140 540" });
+		}
 		
 	</script>
 </body>
