@@ -4,6 +4,10 @@ $main_dark_color: #A50104;
 $main_medium_color: #A50104;
 $main_light_color: #595959;
 
+body {
+	background: white;
+}
+
 .landing {
 	text-align: center;
 	font-family: $special_font;
@@ -27,7 +31,7 @@ $main_light_color: #595959;
 			font-size: 1.7em;
 		}
 		.byline {
-			font-size: 1.2em;
+			font-size: 1.5em;
 			font-family: $title_font;
 			font-weight: 600;
 		}

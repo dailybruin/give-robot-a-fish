@@ -1,3 +1,6 @@
+body {
+  background: white; }
+
 .landing {
   text-align: center;
   font-family: "PT Sans", sans-serif;
@@ -17,7 +20,7 @@
     .landing .landing-content .description {
       font-size: 1.7em; }
     .landing .landing-content .byline {
-      font-size: 1.2em;
+      font-size: 1.5em;
       font-family: "Jura", sans-serif;
       font-weight: 600; }
   .landing .title {
