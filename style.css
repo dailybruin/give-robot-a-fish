@@ -9,22 +9,28 @@
   -o-background-size: cover;
   background-size: cover; }
   .landing .landing-content {
-    padding-top: 20%; }
+    padding: 0.5em;
+    padding-top: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: white; }
     .landing .landing-content .description {
-      font-size: 1.5em; }
+      font-size: 1.7em; }
     .landing .landing-content .byline {
-      font-size: 1em; }
-  .landing a {
+      font-size: 1.2em;
+      font-family: "Jura", sans-serif;
+      font-weight: 600; }
+  .landing .title {
     font-size: 10vh;
-    color: black;
-    text-decoration: none; }
+    font-family: "Jura", sans-serif;
+    font-weight: 600; }
   .landing button {
     border: none;
     outline: none;
     margin-top: 10%; }
     .landing button img {
-      height: 80px;
-      width: 80px; }
+      height: 60px;
+      width: 60px; }
 
 .content {
   margin: auto;
@@ -43,7 +49,7 @@ blockquote {
   margin: 2rem 4rem;
   margin-left: -100px;
   border-left: 4px solid #595959;
-  font-size: 1.75rem;
+  font-size: 1.5em;
   font-family: "PT Sans", sans-serif; }
   blockquote aside {
     font-size: 1rem;
@@ -74,8 +80,11 @@ blockquote.right {
   margin: 5%;
   margin-right: -100px; }
 
-figcaption .caption {
-  font-size: 0.9rem; }
+figure {
+  margin-bottom: 3em; }
+  figure .caption {
+    font-size: 0.9rem;
+    float: right; }
 
 footer {
   font-size: 0.8rem;
