@@ -114,25 +114,4 @@ footer {
   stroke-dashoffset: -474;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s; }
 
-g:hover .arms {
-  stroke: #19f6e8;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760; }
-g:hover .body {
-  stroke: yellow;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760; }
-g:hover .legs {
-  stroke: blue;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760; }
-g:hover .kinect {
-  stroke: pink;
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760; }
-
 /*# sourceMappingURL=style.css.map */

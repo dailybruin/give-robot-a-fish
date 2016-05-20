@@ -15,7 +15,7 @@
 			<div class="title">Give a Robot a Fish</div>
 			<!-- <div class="description">Description</div> -->
 			<div class="byline">
-				By Simon Zhou
+				By Simon Zou
 			</div>
 			<button><img src="http://dogecoin.com/imgs/scrolldown.png"\></button>
 		</div>
@@ -2376,6 +2376,11 @@
 			        scrollTop: $(".content").offset().top
 			    }, 500);
 			});
+			$("svg").hover(function() {
+				console.log("a");
+				$(".arms").css({ stroke: "red", strokeWidth: "2px" });
+			});
+			
 		});
 		
 	</script>

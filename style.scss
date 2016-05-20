@@ -174,20 +174,24 @@ footer {
 	@include robot_hilight;
 }
 
-g:hover {
-	.arms {
-		@include robot_hilight_hover(#19f6e8);
-	}
-	.body {
-		@include robot_hilight_hover(yellow);
-	}
-	.legs {
-		@include robot_hilight_hover(blue);
-	}
-	.kinect {
-		@include thin_robot_hilight_hover(pink);
-	}
-}
+// g:hover [class^='arms'] {
+// 	@include robot_hilight_hover(#19f6e8);
+// }
+
+// g:hover {
+// 	.arms {
+// 		@include robot_hilight_hover(#19f6e8);
+// 	}
+// 	.body {
+// 		@include robot_hilight_hover(yellow);
+// 	}
+// 	.legs {
+// 		@include robot_hilight_hover(blue);
+// 	}
+// 	.kinect {
+// 		@include thin_robot_hilight_hover(pink);
+// 	}
+// }
 
 // OVERWRITE FOUNDATION TOOLTIP STYLES
 
