@@ -109,24 +109,29 @@ footer {
     float: none;
     max-width: 100%;
     margin: 1em auto 1em auto; } }
-.arm-left, .body, .head {
+.arms, .body, .legs, .kinect {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s; }
 
-g:hover .arm-left {
+g:hover .arms {
   stroke: #19f6e8;
-  stroke-width: 5px;
+  stroke-width: 3px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
 g:hover .body {
   stroke: yellow;
-  stroke-width: 5px;
+  stroke-width: 3px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
-g:hover .head {
+g:hover .legs {
   stroke: blue;
-  stroke-width: 5px;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760; }
+g:hover .kinect {
+  stroke: pink;
+  stroke-width: 2px;
   stroke-dashoffset: 0;
   stroke-dasharray: 760; }
 

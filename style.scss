@@ -157,23 +157,42 @@ footer {
 
 @mixin robot_hilight_hover($color) {
 	stroke: $color;
-	stroke-width: 5px;
+	stroke-width: 3px;
 	stroke-dashoffset: 0;
 	stroke-dasharray: 760;
 }
 
-.arm-left, .body, .head {
+
+@mixin thin_robot_hilight_hover($color) {
+	stroke: $color;
+	stroke-width: 2px;
+	stroke-dashoffset: 0;
+	stroke-dasharray: 760;
+}
+
+.arms, .body, .legs, .kinect {
 	@include robot_hilight;
 }
 
 g:hover {
-	.arm-left {
+	.arms {
 		@include robot_hilight_hover(#19f6e8);
 	}
 	.body {
 		@include robot_hilight_hover(yellow);
 	}
-	.head {
+	.legs {
 		@include robot_hilight_hover(blue);
 	}
+	.kinect {
+		@include thin_robot_hilight_hover(pink);
+	}
 }
+
+// OVERWRITE FOUNDATION TOOLTIP STYLES
+
+// .tooltip {
+// 	background-color: red;
+// }
+
+
