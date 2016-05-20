@@ -2380,7 +2380,30 @@
 				console.log("a");
 				$(".arms").css({ stroke: "red", strokeWidth: "2px" });
 			});
-			
+
+			$(".arms").hover(function() {
+				$(".arms").css({ fill: "yellow" });
+			}, function() {
+				$(".arms").css({ fill: "" });
+			});
+
+			$(".body").hover(function() {
+				$(".body").css({ fill: "yellow" });
+			}, function() {
+				$(".body").css({ fill: "" });
+			});
+
+			$(".legs").hover(function() {
+				$(".legs").css({ fill: "yellow" });
+			}, function() {
+				$(".legs").css({ fill: "" });
+			});
+
+			$(".kinect").hover(function() {
+				$(".kinect").css({ fill: "yellow" });
+			}, function() {
+				$(".kinect").css({ fill: "" });
+			});
 		});
 		
 	</script>
