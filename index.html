@@ -2403,25 +2403,25 @@
 			    }, 500);
 			});
 			$(".arms").hover(function() {
-				setHighlight($(".arms"), "19f6e8");
+				setHighlight($(".arms"), "19f6e8", 3); //teal
 			}, function() {
 				resetHighlight($(".arms"));
 			});
 
 			$(".body").hover(function() {
-				setHighlight($(".body"), "yellow");
+				setHighlight($(".body"), "fffb00", 3); //yellow
 			}, function() {
 				resetHighlight($(".body"));
 			});
 
 			$(".legs").hover(function() {
-				setHighlight($(".legs"), "blue");
+				setHighlight($(".legs"), "94ff00", 3); //light blue
 			}, function() {
 				resetHighlight($(".legs"));
 			});
 
 			$(".kinect").hover(function() {
-				setHighlight($(".kinect"), "pink");
+				setHighlight($(".kinect"), "ff8800", 2); //orange
 			}, function() {
 				resetHighlight($(".kinect"));
 			});
@@ -2433,8 +2433,8 @@
 		function removeTooltip(){
 			tooltipSpan.style.visibility = "hidden";
 		}
-		function setHighlight(self, color){
-			self.css({ "stroke": color, "stroke-width": "3px", "stroke-dashoffset": "0", "stroke-dasharray": "760" });
+		function setHighlight(self, color, strokeWidth){
+			self.css({ "stroke": color, "stroke-width": strokeWidth + "px", "stroke-dashoffset": "0", "stroke-dasharray": "760" });
 		}
 		function resetHighlight(self){
 			self.css({ "stroke-width": "0px", "stroke-dashoffset": "-474", "stroke-dasharray": "140 540" });
