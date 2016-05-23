@@ -20,16 +20,18 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 
-	.logo {
-		margin: 1em;
-	}
 	#db-logo {
-		float: left;
+		float: right;
 		width: 40px;
+		margin-right: 0.5em;
+		margin-top: 0.5em;
 	}
 	#prime-logo {
-		float: right;
 		width: 100px;
+		float: left;
+		padding: 0;
+		margin-left: 0.5em;
+		margin-top: 0.5em;
 	}
 
 	.landing-content {
