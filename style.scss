@@ -20,6 +20,18 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 
+	.logo {
+		margin: 1em;
+	}
+	#db-logo {
+		float: left;
+		width: 40px;
+	}
+	#prime-logo {
+		float: right;
+		width: 100px;
+	}
+
 	.landing-content {
 		padding: 0.5em;
 		padding-top: 20%;
@@ -179,7 +191,7 @@ footer {
     position:fixed;
     overflow:hidden;
     background: black;
-    border-radius: 100px;
+    border-rgadius: 100px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 1%;
