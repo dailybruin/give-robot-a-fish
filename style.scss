@@ -1,5 +1,5 @@
 $special_font: 'PT Sans', sans-serif;
-$title_font: 'Jura', sans-serif;
+$title_font: 'Lora', serif;
 $main_dark_color: #A50104;
 $main_medium_color: #A50104;
 $main_light_color: #595959;
@@ -46,6 +46,11 @@ body {
 		}
 		.byline {
 			font-size: 1.5em;
+			font-family: $title_font;
+			font-weight: 600;
+		}
+		.sub-byline {
+			font-size: 1.3em;
 			font-family: $title_font;
 			font-weight: 600;
 		}

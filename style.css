@@ -32,11 +32,15 @@ body {
       font-size: 1.7em; }
     .landing .landing-content .byline {
       font-size: 1.5em;
-      font-family: "Jura", sans-serif;
+      font-family: "Lora", serif;
+      font-weight: 600; }
+    .landing .landing-content .sub-byline {
+      font-size: 1.3em;
+      font-family: "Lora", serif;
       font-weight: 600; }
   .landing .title {
     font-size: 10vh;
-    font-family: "Jura", sans-serif;
+    font-family: "Lora", serif;
     font-weight: 600; }
   .landing button {
     border: none;
