@@ -109,7 +109,7 @@ footer {
     float: none;
     max-width: 100%;
     margin: 1em auto 1em auto; } }
-.arms, .body, .legs, .kinect {
+.leftArm, .rightArm, .body, .legs, .kinect {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s; }
