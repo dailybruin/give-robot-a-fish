@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:title" content="Give a Robot a Fish" />
 	<meta property="og:description" content="UCLA’s VCLA lab aims to build AIs capable of common sense and to teach robots to learn the way humans do." />
-	<meta property="og:image" content="http://dailybruin.com/images/2016/05/AYU_0527.jpg" />
+	<meta property="og:image" content="http://dailybruin.com/images/2016/05/robot_compressed.jpg" />
 	<link rel="shortcut icon" type="image/png" href="http://dailybruin.com/images/2015/09/Daily-Bruin-Logo.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
@@ -2383,19 +2383,19 @@
 		$(document).foundation();
 		$(document).on('mouseover', 'div', function(e) {
     		if($(e.target).attr('class') && $(e.target).attr('class').indexOf("leftArm") > 0){
-    			showTooltip("$8,000");
+    			showTooltip("Left Arm: $8,000");
     		}
 				else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("rightArm") > 0){
-    			showTooltip("$12,000");
+    			showTooltip("Right Arm: $12,000");
     		}
     		else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("body") > 0){
-    			showTooltip("$15,000");
+    			showTooltip("Robot Body: $15,000");
     		}
     		else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("legs") > 0){
-    			showTooltip("$25,000");
+    			showTooltip("Robot Base: $25,000");
     		}
     		else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("kinect") > 0){
-    			showTooltip("$100");
+    			showTooltip("Xbox Kinect: $100");
     		}
     		else{
     			removeTooltip();
