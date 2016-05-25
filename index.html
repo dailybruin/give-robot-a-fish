@@ -2383,10 +2383,12 @@
 		$(document).foundation();
 		$(document).on('mouseover', 'div', function(e) {
     		if($(e.target).attr('class') && $(e.target).attr('class').indexOf("leftArm") > 0){
-    			showTooltip("Left Arm: $8,000");
+    			// frame of reference should be the robot, viewer's left is robot's right
+    			showTooltip("Right Arm: $12,000"); 
     		}
 				else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("rightArm") > 0){
-    			showTooltip("Right Arm: $12,000");
+    			// frame of reference should be the robot, viewer's right is robot's left
+    			showTooltip("Left Arm: $8,000");
     		}
     		else if($(e.target).attr('class') && $(e.target).attr('class').indexOf("body") > 0){
     			showTooltip("Robot Body: $15,000");
